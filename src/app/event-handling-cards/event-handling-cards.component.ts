@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './event-handling-cards.component.html',
   styleUrls: ['./event-handling-cards.component.css']
 })
-export class EventHandlingCardsComponent implements OnInit {
+export class EventHandlingCardsComponent {
+  selectedIndex: number = -1;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  voteFor(index: number) {
+    return this.selectedIndex = index;
   }
-
 }

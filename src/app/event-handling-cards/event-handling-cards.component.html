@@ -1,23 +1,30 @@
-<h1>Event handling cards</h1>
+<header>
+  <h2>Event handling cards</h2>
+  <small> You selected: {{selectedIndex + 1}}. card</small>
+</header>
 <div class="card-container">
   <!-- card -->
   <div class="my-card">
+    <h3 *ngIf="selectedIndex === 0">Choosen!</h3>
     <img src="/assets/img/1.jpeg">
-    <button class="btn btn-primary">vote</button>
+    <button (click)="voteFor(0)" class="btn btn-primary">vote</button>
   </div>
   <!-- card -->
   <div class="my-card">
+    <h3 *ngIf="selectedIndex === 1">Choosen!</h3>
     <img src="/assets/img/2.jpg">
-    <button class="btn btn-primary">vote</button>
+    <button (click)="voteFor(1)" class="btn btn-primary">vote</button>
   </div>
   <!-- card -->
   <div class="my-card">
+    <h3 *ngIf="selectedIndex === 2">Choosen!</h3>
     <img src="/assets/img/3.jpg">
-    <button class="btn btn-primary">vote</button>
+    <button (click)="voteFor(2)" class="btn btn-primary">vote</button>
   </div>
   <!-- card -->
   <div class="my-card">
+    <h3 *ngIf="selectedIndex === 3">Choosen!</h3>
     <img src="/assets/img/4.jpeg">
-    <button class="btn btn-primary">vote</button>
+    <button (click)="voteFor(3)" class="btn btn-primary">vote</button>
   </div>
 </div><!-- card-container end -->
